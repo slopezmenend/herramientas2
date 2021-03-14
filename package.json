@@ -9,7 +9,9 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "deploy": "npm run build && git add . && git commit -m \"VSCode commit\" && git push -v origin main",
+    "just-deploy": "git add . && git commit -m \"VSCode commit\" && git push -v origin main"
   },
   "repository": {
     "type": "git",
