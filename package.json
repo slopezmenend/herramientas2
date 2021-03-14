@@ -4,8 +4,8 @@
   "private": true,
   "description": "PEC1: Herramientas CSS y HTML 2. Usando uoc-boilerplate",
   "scripts": {
-    "parcel:serve": "parcel serve src/index.html -p 8123 --open",
-    "parcel:build": "parcel build src/index.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
+    "parcel:serve": "parcel serve src/*.html -p 8123 --open",
+    "parcel:build": "parcel build src/*.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
