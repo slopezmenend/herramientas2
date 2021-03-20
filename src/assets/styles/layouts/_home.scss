@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   padding: 30px;
   font-family: $font-family-sans-serif;
@@ -18,4 +18,216 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: $uoc-corporate;
+}*/
+
+
+
+.cv {
 }
+
+  .cv__cabecera {
+
+  }
+
+  .cv__logo {
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 5%;
+  }
+
+  .cv__titulo {
+    margin: 1% 2% 0 2%;
+    padding: 0px 10px;
+    width: 95%;
+    border-radius: 10px;
+    text-decoration: underline;
+    background-color: $color-principal;
+    color: $color-terciario;
+    text-align: center;
+  }
+
+  .cv__foto {
+    position: absolute;
+    right: 2%;
+    //top:-.01%;
+    top: 10px;
+    padding: 2px;
+    width: 8%;
+    border-radius: 50%;
+    border: 2px double $color-principal;
+    background-color: $color-bg;
+  }
+
+
+
+
+
+/*****************************************************************************\
+  #SECCION
+\*****************************************************************************/
+.seccion {
+  background-color: $color-bg;
+  color: $color-principal;
+  border: 2px solid $color-principal;
+  border-radius: 10px;
+  margin: 2%;
+  padding: 0 10px 10px 10px;
+  width: 95%;
+  //display: block;
+  overflow-x:auto; //table responsive
+  //z-index: 0;
+}
+
+  .seccion__titulo {
+    border-radius: 10px;
+    text-decoration: underline;
+    background-color: $color-principal;
+    color: $color-terciario;
+    text-align: center;
+    //width: 25%;
+    padding: 5px;
+    //display: block;
+    //margin: 0 0 10px 0;
+    //z-index: 1;
+    position: relative;
+    top: -5px;
+    left: -5px;
+  }
+
+  .seccion__texto {
+
+  }
+
+
+
+
+
+/*****************************************************************************\
+  #TABLA
+\*****************************************************************************/
+.tabla {
+  width: 100%;
+  border: 2px solid $color-principal;
+}
+
+  .tabla__cabecera {
+
+  }
+
+  .tabla__contenido {
+    
+  }
+
+  .tabla__fila {
+
+  }
+
+  .tabla__fila--contraste:nth-child(odd) {
+    background-color: $color-bg-contrast;
+  }
+
+  .tabla__fila--centrada {
+    text-align: center;
+  }
+
+  .tabla__celda-cabecera {
+    padding: 0px 5px;
+    background-color: $color-principal;
+    color: $color-terciario;
+  }
+
+  .tabla__celda-cabecera--hidden {
+    background-color: $color-bg;
+  }  
+
+  .tabla__celda-contenido {
+    
+  }
+
+  .tabla__celda-texto {
+
+  }
+
+
+.tabla--no-borde {
+  border: 0;
+}
+
+@media only screen and (max-width: 500px)
+{
+  /*
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }*/
+  body {
+    background-color: red;
+  };
+
+  .tabla, .tabla__cabecera, .tabla__contenido, .tabla__fila,  
+  .tabla__celda-cabecera, .tabla__celda-contenido, .tabla--no-borde {
+    display: inline-block;
+  }
+
+  .tabla__fila {
+    border: 2px solid $color-principal;
+    //margin-bottom: 10px;
+  }
+
+  .tabla__cabecera { display: none; }
+  .tabla__celda-contenido {
+    width: 98%;
+    text-align: right;
+    padding-left: 1%;
+  }
+
+  .tabla__celda-contenido:before {
+    width: 49%;
+    content: attr(data-label);
+    float: left;
+    padding-right: 1%;
+    text-align: left;
+    background-color: $color-principal;
+    color: $color-terciario;   
+  }
+
+  .tabla__celda-contenido--completo:before {
+    width: 99%;
+  }
+
+  .tabla__celda-contenido--secundario:before {
+    background-color: $color-cuaternario;
+  }
+
+  .tabla__celda-contenido--completo {
+    width: 98%;
+    margin-right: 2px;
+  }
+
+  .tabla--no-borde {
+    margin-right:2%;
+    .tabla__celda-contenido {
+      text-align: left;
+    }
+  }
+
+  .lista__elemento {
+    text-align: left;
+  }
+
+}
+
+
+
+
+
+
+/*****************************************************************************\
+  #LISTA
+\*****************************************************************************/
+.lista {
+  .lista__elemento {
+    list-style:disc;
+  }
+}
+
+

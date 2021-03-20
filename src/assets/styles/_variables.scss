@@ -1,8 +1,20 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+ "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+ "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+/*Definimos nuestros 3 colores principales*/
+$color-principal:#000078;
+$color-secundario: rgb(59, 132, 155);
+$color-terciario: white;
+$color-cuaternario: #6a6a99;
+
+/*El resto de colores los definiremos usando esos 3 y así podemos cambiar toda 
+la imagen corporativa del sitio en un único punto (p.e. para aumentar 
+accesibilidad por contraste de colores, etc)*/
+$color-bg: color.scale($color-secundario, $lightness: 70%);
+$color-bg-contrast: color.scale($color-principal, $lightness: 70%);
+
+
