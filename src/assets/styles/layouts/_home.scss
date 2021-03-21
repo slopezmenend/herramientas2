@@ -181,7 +181,7 @@
   
   .tabla__celda-contenido {
     display: inline-block;
-    width: 98%;
+    width: $ancho-celda;
     padding-left: 1%;
     text-align: right;
         
@@ -189,7 +189,7 @@
 
   .tabla__celda-contenido:before {
     float: left;
-    width: 49%;
+    width: mitad($ancho-celda); //49%;
     padding-right: 1%;
     
     color: $color-terciario;  
@@ -217,7 +217,7 @@
   }
 
   .tabla__celda-contenido--completo {
-    width: 98%;
+    width: $ancho-celda;
     margin-right: 2px;
   }
 
@@ -228,16 +228,15 @@
 }
 
 
-
-
-
 /*****************************************************************************\
   #LISTA
 \*****************************************************************************/
-.lista {
-  .lista__elemento {
-    list-style:disc;
-  }
+.lista__elemento {
+  list-style:disc;
 }
 
 
+
+@function mitad($n) {
+  @return $n / 2;
+}

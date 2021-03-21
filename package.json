@@ -37,6 +37,7 @@
     "stylelint-scss": "^3.19.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "stylelint-order": "^4.1.0"
   }
 }

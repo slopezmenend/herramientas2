@@ -17,4 +17,4 @@ accesibilidad por contraste de colores, etc)*/
 $color-bg: color.scale($color-secundario, $lightness: 70%);
 $color-bg-contrast: color.scale($color-principal, $lightness: 70%);
 
-
+$ancho-celda: 98%;
