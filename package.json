@@ -36,5 +36,7 @@
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-scss": "^3.19.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "stylelint-order": "^4.1.0"
+  }
 }

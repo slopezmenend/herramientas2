@@ -22,40 +22,39 @@
 
 
 
-.cv {
+/*.cv {
 }
 
   .cv__cabecera {
 
-  }
+  }*/
 
   .cv__logo {
-    margin-left: 2%;
-    margin-top: 2%;
     width: 5%;
+    margin-top:  2%;
+    margin-left: 2%;
   }
 
   .cv__titulo {
-    margin: 1% 2% 0 2%;
-    padding: 0px 10px;
     width: 95%;
-    border-radius: 10px;
-    text-decoration: underline;
-    background-color: $color-principal;
+    padding: 0px 10px;
+    margin: 1% 2% 0;
     color: $color-terciario;
     text-align: center;
+    text-decoration: underline;    
+    background-color: $color-principal;    
+    border-radius: 10px;
   }
 
   .cv__foto {
     position: absolute;
-    right: 2%;
-    //top:-.01%;
     top: 10px;
-    padding: 2px;
+    right: 2%;
     width: 8%;
-    border-radius: 50%;
-    border: 2px double $color-principal;
+    padding: 2px;
     background-color: $color-bg;
+    border: 2px double $color-principal;
+    border-radius: 50%;
   }
 
 
@@ -66,37 +65,31 @@
   #SECCION
 \*****************************************************************************/
 .seccion {
-  background-color: $color-bg;
+  width: 95%;
+  padding: 0 10px 10px;
+  margin: 2%;
+  overflow-x:auto; //table responsive
   color: $color-principal;
+  background-color: $color-bg;
   border: 2px solid $color-principal;
   border-radius: 10px;
-  margin: 2%;
-  padding: 0 10px 10px 10px;
-  width: 95%;
-  //display: block;
-  overflow-x:auto; //table responsive
-  //z-index: 0;
 }
 
   .seccion__titulo {
-    border-radius: 10px;
-    text-decoration: underline;
-    background-color: $color-principal;
-    color: $color-terciario;
-    text-align: center;
-    //width: 25%;
-    padding: 5px;
-    //display: block;
-    //margin: 0 0 10px 0;
-    //z-index: 1;
     position: relative;
     top: -5px;
     left: -5px;
+    padding: 5px;
+    color: $color-terciario;
+    text-align: center;
+    text-decoration: underline;
+    background-color: $color-principal;    
+    border-radius: 10px;    
   }
 
-  .seccion__texto {
+  /*.seccion__texto {
 
-  }
+  }*/
 
 
 
@@ -110,7 +103,7 @@
   border: 2px solid $color-principal;
 }
 
-  .tabla__cabecera {
+/*  .tabla__cabecera {
 
   }
 
@@ -120,7 +113,7 @@
 
   .tabla__fila {
 
-  }
+  }*/
 
   .tabla__fila--contraste:nth-child(odd) {
     background-color: $color-bg-contrast;
@@ -132,21 +125,21 @@
 
   .tabla__celda-cabecera {
     padding: 0px 5px;
-    background-color: $color-principal;
     color: $color-terciario;
+    background-color: $color-principal;
   }
 
   .tabla__celda-cabecera--hidden {
     background-color: $color-bg;
   }  
 
-  .tabla__celda-contenido {
+  /*.tabla__celda-contenido {
     
   }
 
   .tabla__celda-texto {
 
-  }
+  }*/
 
 
 .tabla--no-borde {
@@ -160,34 +153,59 @@
     display: block;
   }*/
   body {
-    background-color: red;
-  };
+    //background-color: red;
+    padding-right: 5%;
+  }
 
-  .tabla, .tabla__cabecera, .tabla__contenido, .tabla__fila,  
-  .tabla__celda-cabecera, .tabla__celda-contenido, .tabla--no-borde {
+  .tabla {
     display: inline-block;
   }
-
+  
+  .tabla__cabecera {
+    display: inline-block;
+    display: none;
+  }
+  
+  .tabla__contenido {
+    display: inline-block;
+  }
+  
   .tabla__fila {
+    display: inline-block;
     border: 2px solid $color-principal;
-    //margin-bottom: 10px;
   }
 
-  .tabla__cabecera { display: none; }
+  .tabla__celda-cabecera {
+    display: inline-block;
+  }
+  
   .tabla__celda-contenido {
+    display: inline-block;
     width: 98%;
-    text-align: right;
     padding-left: 1%;
+    text-align: right;
+        
   }
 
   .tabla__celda-contenido:before {
-    width: 49%;
-    content: attr(data-label);
     float: left;
+    width: 49%;
     padding-right: 1%;
+    
+    color: $color-terciario;  
     text-align: left;
+    content: attr(data-label);
     background-color: $color-principal;
-    color: $color-terciario;   
+    
+    
+  }
+
+  .tabla--no-borde {
+    display: inline-block;
+    margin-right:2%;
+    .tabla__celda-contenido {
+      text-align: left;
+    }    
   }
 
   .tabla__celda-contenido--completo:before {
@@ -203,19 +221,11 @@
     margin-right: 2px;
   }
 
-  .tabla--no-borde {
-    margin-right:2%;
-    .tabla__celda-contenido {
-      text-align: left;
-    }
-  }
-
   .lista__elemento {
     text-align: left;
   }
 
 }
-
 
 
 
