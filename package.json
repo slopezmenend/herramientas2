@@ -2,7 +2,7 @@
   "name": "slopezmenend",
   "version": "0.1.0",
   "private": true,
-  "description": "PEC1: Herramientas CSS y HTML 2. Usando uoc-boilerplate",
+  "description": "PEC2: Herramientas CSS y HTML 2. Usando uoc-boilerplate",
   "scripts": {
     "parcel:serve": "parcel serve src/*.html -p 8123 --open",
     "parcel:build": "parcel build src/*.html --public-url ./ --dist-dir dist --no-source-maps --no-cache",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slopezmenend/herramientas2.git"
+    "url": "git+https://github.com/slopezmenend/PEC2_herramientas2.git"
   },
   "author": {
     "name": "Samuel López",
     "email": "slopezmenend@uoc.edu"
   },
   "license": "MIT",
-  "homepage": "https://github.com/slopezmenend/herramientas2/blob/main/README.md",
+  "homepage": "https://github.com/slopezmenend/PEC2_herramientas2/blob/main/README.md",
   "devDependencies": {
     "autoprefixer": "^10.2.3",
     "npm-run-all": "^4.1.5",
